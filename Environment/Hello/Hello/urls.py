@@ -17,7 +17,7 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from Hello.views import hello,current_datetime,hours_ahead
 from temp import views as temp_views
-from chart.views import chart
+from chart.views import chart,city,energy
 #from chart.views import update_plot
 import settings
 
@@ -28,10 +28,15 @@ urlpatterns = [
     url(r'^time/$',current_datetime),
     url(r'^time/plus/(\d{1,2})/$',hours_ahead),
     url(r'^temp/',temp_views.temp,name='temp'),
+    url(r'^energy.html/',energy,name='energy'),
     #url(r'^Temprature.png/',temp_views.img,name='img'),
     url( r'^static/(?P<path>.*)$', 'django.views.static.serve',{ 'document_root':settings.STATIC_PATH }),
     url(r'^data-visualization.html/$',temp_views.datavisualization,name="data-visualization"),
+    url(r'^city.html/$',city,name="city"),
     url(r'^temppng.html/$',temp_views.temppng,name="temppng"),
+    url(r'^earthquake.html/$',temp_views.earthquake,name="earthquake"),
+    url(r'^bird.html/$',temp_views.bird,name="bird"),
+     url(r'^temp.html/$',temp_views.temp,name="temp"),
     url(r'^maps.html/$',temp_views.maps,name="maps"),
     url(r'^chart/$',chart, name="chart"),
     #url(r'^update_plot/$', update_plot, name="update_plot"),

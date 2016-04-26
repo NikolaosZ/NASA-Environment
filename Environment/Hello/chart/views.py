@@ -14,6 +14,12 @@ from bokeh.plotting import Figure
 
 STATISTICS = ['record_min_temp', 'actual_min_temp', 'average_min_temp', 'average_max_temp', 'actual_max_temp', 'record_max_temp']
 
+def city(request):
+
+    return render(request, 'city.html')
+    
+def energy(request):
+    return render(request,'energy.html')
 
 def simple_chart(request):
     plot = figure()
@@ -31,8 +37,8 @@ def chart(request):
 		df = src[src.airport == name].copy()
 		del df['airport']
 		df['date'] = pd.to_datetime(df.date)
-		df['left'] = df.date - pd.DateOffset(days=0.5)
-		df['right'] = df.date + pd.DateOffset(days=0.5)
+		df['left'] = df.date #- pd.DateOffset(days=0.5)
+		df['right'] = df.date #+ pd.DateOffset(days=0.5)
 		df = df.set_index(['date'])
 		df.sort_index(inplace=True)
 		if distribution == 'Smooth':
