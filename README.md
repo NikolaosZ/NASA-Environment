@@ -35,10 +35,12 @@ mysite/
         wsgi.py
     temp/
         admin.py
+        modules.py
         tests.py
         views.py
     chart/
         admin.py
+        modules.py
         tests.py
         views.py
     static/
