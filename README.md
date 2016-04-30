@@ -34,11 +34,13 @@ mysite/
         views.py
         wsgi.py
     temp/
+        templates
         admin.py
         modules.py
         tests.py
         views.py
     chart/
+        templates
         admin.py
         modules.py
         tests.py
@@ -47,6 +49,7 @@ mysite/
         img
         css
         js
+        ...
         
 ```
 
