@@ -21,7 +21,7 @@ Django version 1.5.4, using settings 'Hello.settings'
 Development server is running at http://0.0.0.0:8000/
 Quit the server with CONTROL-C.
 ```
-Here is our files:
+##Here is our files:
 ```sh
 mysite/
     manage.py
@@ -32,7 +32,7 @@ mysite/
         wsgi.py	
 ```
 
-websites locations:
+##websites locations:
 
 nasaenvironment/nasaenvironment/Hello/temp/templates/
 
