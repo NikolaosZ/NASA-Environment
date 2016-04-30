@@ -24,7 +24,7 @@ Development server is running at http://0.0.0.0:8000/
 Quit the server with CONTROL-C.
 ```
 ##Website Folder
-Here is our files:
+Here is our website file tree:
 ```sh
 mysite/
     manage.py
@@ -34,6 +34,17 @@ mysite/
         views.py
         wsgi.py
     temp/
+        admin.py
+        tests.py
+        views.py
+    chart/
+        admin.py
+        tests.py
+        views.py
+    static/
+        img
+        css
+        js
         
 ```
 
