@@ -55,7 +55,7 @@ mysite/
 
 ##Websites Locations:
 
-nasaenvironment/nasaenvironment/Hello/temp/templates/
+http://nasaenvironment/nasaenvironment/Hello/temp/templates/
 
 
 
