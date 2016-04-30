@@ -3,7 +3,7 @@
 website location:ec2-54-174-222-168.compute-1.amazonaws.com:8000 or 54.174.222.168:8000
 
 ##To start our project:
-After starting a EC2 instance, download these basic packages and APIs: python 2.7, Django, numpy, bokeh, pandas
+After starting a EC2 instance, download these basic packages and APIs: python 2.7, Django, numpy, bokeh, pandas.
 Then try to start server use commands below:
 ```sh
 git clone https://github.com/NikolaosZ/NASA-Environment.git
@@ -23,7 +23,8 @@ Django version 1.5.4, using settings 'Hello.settings'
 Development server is running at http://0.0.0.0:8000/
 Quit the server with CONTROL-C.
 ```
-##Here is our files:
+##Website Folder
+Here is our files:
 ```sh
 mysite/
     manage.py
@@ -31,10 +32,12 @@ mysite/
         settings.py	
         urls.py
         views.py
-        wsgi.py	
+        wsgi.py
+    temp/
+        
 ```
 
-##websites locations:
+##Websites Locations:
 
 nasaenvironment/nasaenvironment/Hello/temp/templates/
 
